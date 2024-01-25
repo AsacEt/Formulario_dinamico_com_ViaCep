@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <title>Consultar endereço</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">MuniCEP</h1>
+        <ul class="abas">
+            <li class="aba"><a href="#" class=""></a></li>
+            <li class="aba"><a href="#" class=""></a></li>
+            <li class="aba"><a href="#" class=""></a></li>
+            <li class="aba"><a href="#" class=""></a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="square">
+            <h1 class="text">Consulte seu endereço via CEP</h1>
+            <label>Digite seu CEP:</label>
+            <input type="text" id="cep" maxlength="9" oninput="formatarCEP()" placeholder="12345-678"/>
+            <button onclick="consultarEndereco()">Consulte</button>
+            <div id="resultado">
+                Seu endereço é:
+            </div>
+        </div>
+    </main>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
